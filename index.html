@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game">
+
+    <header>
+        <div class="logo">🎮</div>
+        <div>
+            <h1>TIC <span>TAC</span> TOE</h1>
+            <p>ULTIMATE BATTLE</p>
+        </div>
+
+        <button id="theme">☀️</button>
+        <button id="sound">🔊</button>
+    </header>
+
+    <!-- GAME MODE -->
+
+    <div class="controls">
+
+        <div>
+            <label>GAME MODE</label>
+            <select id="mode">
+                <option value="ai">🤖 Player vs AI</option>
+                <option value="pvp">👥 2 Players</option>
+            </select>
+        </div>
+
+        <div id="difficultyBox">
+            <label>DIFFICULTY</label>
+            <select id="difficulty">
+                <option value="easy">🟢 Easy</option>
+                <option value="medium" selected>🟡 Medium</option>
+                <option value="hard">🔴 Hard</option>
+            </select>
+        </div>
+
+    </div>
+
+    <!-- SCORE -->
+
+    <div class="score">
+
+        <div class="player x-player">
+            <small>PLAYER X</small>
+            <strong id="xScore">0</strong>
+        </div>
+
+        <div class="vs">VS</div>
+
+        <div class="player o-player">
+            <small id="oName">🤖 AI O</small>
+            <strong id="oScore">0</strong>
+        </div>
+
+    </div>
+
+    <!-- TURN -->
+
+    <div id="turn">
+        <span></span>
+        PLAYER X'S TURN
+    </div>
+
+    <!-- BOARD -->
+
+    <div class="board">
+
+        <button class="cell" data-index="0"></button>
+        <button class="cell" data-index="1"></button>
+        <button class="cell" data-index="2"></button>
+
+        <button class="cell" data-index="3"></button>
+        <button class="cell" data-index="4"></button>
+        <button class="cell" data-index="5"></button>
+
+        <button class="cell" data-index="6"></button>
+        <button class="cell" data-index="7"></button>
+        <button class="cell" data-index="8"></button>
+
+        <div id="winLine"></div>
+
+    </div>
+
+    <!-- RESULT -->
+
+    <div id="message"></div>
+
+    <!-- BUTTONS -->
+
+    <div class="buttons">
+
+        <button id="newGame">
+            🔄 NEW GAME
+        </button>
+
+        <button id="reset">
+            RESET
+        </button>
+
+    </div>
+
+    <!-- STATISTICS -->
+
+    <div class="stats">
+
+        <div>
+            <small>WINS</small>
+            <strong id="wins">0</strong>
+        </div>
+
+        <div>
+            <small>LOSSES</small>
+            <strong id="losses">0</strong>
+        </div>
+
+        <div>
+            <small>DRAWS</small>
+            <strong id="draws">0</strong>
+        </div>
+
+        <div>
+            <small>WIN RATE</small>
+            <strong id="rate">0%</strong>
+        </div>
+
+    </div>
+
+    <footer>
+        VOSC ACTIVITY-1 • HTML • CSS • JAVASCRIPT
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
